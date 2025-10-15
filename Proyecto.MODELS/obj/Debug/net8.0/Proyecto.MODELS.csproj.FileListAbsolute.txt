@@ -1,0 +1,11 @@
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\bin\Debug\net8.0\Proyecto.MODELS.deps.json
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\bin\Debug\net8.0\Proyecto.MODELS.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\bin\Debug\net8.0\Proyecto.MODELS.pdb
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\Proyecto.MODELS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\Proyecto.MODELS.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\Proyecto.MODELS.AssemblyInfo.cs
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\Proyecto.MODELS.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\Proyecto.MODELS.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\refint\Proyecto.MODELS.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\Proyecto.MODELS.pdb
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.MODELS\obj\Debug\net8.0\ref\Proyecto.MODELS.dll

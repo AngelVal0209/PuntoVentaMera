@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E937DE9-ECC2-43A2-87E3-E86254F2407F}|Proyecto.WEB\\Proyecto.WEB.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9E937DE9-ECC2-43A2-87E3-E86254F2407F}|Proyecto.WEB\\Proyecto.WEB.csproj|solutionrelative:proyecto.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\datacontext\\puntoventacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\datacontext\\puntoventacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\datacontext\\movimientostock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\datacontext\\movimientostock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\datacontext\\detalleventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\datacontext\\detalleventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\comandos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\comandos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\appsettings.json",
+              "RelativeDocumentMoniker": "Proyecto.WEB\\appsettings.json",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\appsettings.json",
+              "RelativeToolTip": "Proyecto.WEB\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-15T16:54:48.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovimientoStock.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\MovimientoStock.cs",
+              "RelativeDocumentMoniker": "Proyecto.DAL\\DataContext\\MovimientoStock.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\MovimientoStock.cs",
+              "RelativeToolTip": "Proyecto.DAL\\DataContext\\MovimientoStock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T16:54:31.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetalleVentum.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\DetalleVentum.cs",
+              "RelativeDocumentMoniker": "Proyecto.DAL\\DataContext\\DetalleVentum.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\DetalleVentum.cs",
+              "RelativeToolTip": "Proyecto.DAL\\DataContext\\DetalleVentum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T16:54:30.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PuntoVentaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
+              "RelativeDocumentMoniker": "Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
+              "RelativeToolTip": "Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T16:53:55.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PuntoVentaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T16:52:56.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Comandos.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\Comandos.cs",
+              "RelativeDocumentMoniker": "Proyecto.DAL\\Comandos.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\Comandos.cs",
+              "RelativeToolTip": "Proyecto.DAL\\Comandos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T16:45:44.457Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

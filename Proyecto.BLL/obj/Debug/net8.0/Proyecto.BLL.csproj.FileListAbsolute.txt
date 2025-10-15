@@ -1,0 +1,17 @@
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\bin\Debug\net8.0\Proyecto.BLL.deps.json
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\bin\Debug\net8.0\Proyecto.BLL.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\bin\Debug\net8.0\Proyecto.BLL.pdb
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.BLL.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.BLL.AssemblyInfo.cs
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.BLL.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\refint\Proyecto.BLL.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.BLL.pdb
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\ref\Proyecto.BLL.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\bin\Debug\net8.0\Proyecto.DAL.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\bin\Debug\net8.0\Proyecto.MODELS.dll
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\bin\Debug\net8.0\Proyecto.DAL.pdb
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\bin\Debug\net8.0\Proyecto.MODELS.pdb
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.BLL.csproj.AssemblyReference.cache
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.BLL\obj\Debug\net8.0\Proyecto.422354AC.Up2Date
