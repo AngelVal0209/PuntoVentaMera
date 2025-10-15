@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\modelosrepositorios\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\modelosrepositorios\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2AE4785-E38C-489C-B592-1E5EB5812723}|Proyecto.BLL\\Proyecto.BLL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.bll\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2AE4785-E38C-489C-B592-1E5EB5812723}|Proyecto.BLL\\Proyecto.BLL.csproj|solutionrelative:proyecto.bll\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2AE4785-E38C-489C-B592-1E5EB5812723}|Proyecto.BLL\\Proyecto.BLL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.bll\\proyecto.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F2AE4785-E38C-489C-B592-1E5EB5812723}|Proyecto.BLL\\Proyecto.BLL.csproj|solutionrelative:proyecto.bll\\proyecto.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\genericrepositorio\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\genericrepositorio\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\modelosrepositorios\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\modelosrepositorios\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,37 +94,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Proyecto.BLL",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.BLL\\Proyecto.BLL.csproj",
+              "RelativeDocumentMoniker": "Proyecto.BLL\\Proyecto.BLL.csproj",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.BLL\\Proyecto.BLL.csproj",
+              "RelativeToolTip": "Proyecto.BLL\\Proyecto.BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-15T18:06:42.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.BLL\\Interfaces\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "Proyecto.BLL\\Interfaces\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.BLL\\Interfaces\\IUsuarioService.cs",
+              "RelativeToolTip": "Proyecto.BLL\\Interfaces\\IUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:38:05.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\ModelosRepositorios\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "Proyecto.DAL\\ModelosRepositorios\\UsuarioRepository.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\ModelosRepositorios\\UsuarioRepository.cs",
               "RelativeToolTip": "Proyecto.DAL\\ModelosRepositorios\\UsuarioRepository.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T17:21:48.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\GenericRepositorio\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Proyecto.DAL\\GenericRepositorio\\IGenericRepository.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\GenericRepositorio\\IGenericRepository.cs",
               "RelativeToolTip": "Proyecto.DAL\\GenericRepositorio\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T17:18:11.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\Program.cs",
               "RelativeDocumentMoniker": "Proyecto.WEB\\Program.cs",
@@ -124,12 +158,11 @@
               "RelativeToolTip": "Proyecto.WEB\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T17:06:58.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T17:06:58.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Proveedor.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Proveedor.cs",
@@ -141,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Producto.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Producto.cs",
@@ -153,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "PagoFiado.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\PagoFiado.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\PagoFiado.cs",
@@ -165,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "MovimientoStock.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\MovimientoStock.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\MovimientoStock.cs",
@@ -177,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "DetalleVentum.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DetalleVentum.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\DetalleVentum.cs",
@@ -189,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "DetalleCompra.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DetalleCompra.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\DetalleCompra.cs",
@@ -201,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "PuntoVentaContext.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
               "RelativeDocumentMoniker": "Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
@@ -209,12 +242,11 @@
               "RelativeToolTip": "Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
               "ViewState": "AgIAALwAAAAAAAAAAAAAANQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:53:55.859Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T16:53:55.859Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Usuario.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Usuario.cs",
@@ -222,12 +254,11 @@
               "RelativeToolTip": "Proyecto.MODELS\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T17:06:11.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T17:06:11.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Rol.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Rol.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Rol.cs",
@@ -239,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Ventum.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Ventum.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Ventum.cs",
@@ -251,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\appsettings.json",
               "RelativeDocumentMoniker": "Proyecto.WEB\\appsettings.json",
@@ -263,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Compra.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Compra.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Compra.cs",
@@ -275,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Cliente.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Cliente.cs",
@@ -287,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Categorium.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Categorium.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\Categorium.cs",
@@ -299,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "PuntoVentaContext.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
@@ -311,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Comandos.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\Comandos.cs",
               "RelativeDocumentMoniker": "Proyecto.DAL\\Comandos.cs",
