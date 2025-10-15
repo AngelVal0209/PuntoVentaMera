@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74399363da80b7e66e3ab80771c2ad83abe09171")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+820f367cf7dbb622e71b46c4001cc9a85c01eaee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
