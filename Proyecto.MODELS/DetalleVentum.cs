@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Proyecto.DAL.DataContext;
+namespace Proyecto.MODELS;
 
-public partial class DetalleCompra
+public partial class DetalleVentum
 {
     public int IdDetalle { get; set; }
 
-    public int IdCompra { get; set; }
+    public int IdVenta { get; set; }
 
     public int IdProducto { get; set; }
 
     public int Cantidad { get; set; }
 
-    public decimal PrecioCompra { get; set; }
+    public decimal PrecioUnitario { get; set; }
 
     public decimal? Subtotal { get; set; }
 
-    public virtual Compra IdCompraNavigation { get; set; } = null!;
-
     public virtual Producto IdProductoNavigation { get; set; } = null!;
+
+    public virtual Ventum IdVentaNavigation { get; set; } = null!;
 }

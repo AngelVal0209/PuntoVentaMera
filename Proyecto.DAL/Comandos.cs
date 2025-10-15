@@ -1,12 +1,18 @@
 ﻿
-        /*
-         Scaffolding 
+/*
+ Scaffolding 
 
-        Scaffold-DbContext "DESKTOP-VL92TI0\SQLEXPRESS; DataBase=PuntoVenta;Integrated Security=true" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir DataContext
+Scaffold-DbContext "DESKTOP-VL92TI0\SQLEXPRESS; DataBase=PuntoVenta;Integrated Security=true" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir DataContext
 
 
-         CodeFirst
-        Add-Migration
-        Update-Database
 
-         */
+    Forzar el scaffolding 
+
+Scaffold-DbContext "Server=DESKTOP-VL92TI0\SQLEXPRESS;Database=PuntoVenta;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DataContext -Force
+
+
+ CodeFirst
+Add-Migration
+Update-Database
+
+ */

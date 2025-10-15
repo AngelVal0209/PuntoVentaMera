@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Proyecto.DAL.DataContext;
+namespace Proyecto.MODELS;
 
-public partial class Proveedor
+public partial class Cliente
 {
-    public int IdProveedor { get; set; }
+    public int IdCliente { get; set; }
 
     public string Nombre { get; set; } = null!;
 
@@ -15,5 +15,5 @@ public partial class Proveedor
 
     public string? Direccion { get; set; }
 
-    public virtual ICollection<Compra> Compras { get; set; } = new List<Compra>();
+    public virtual ICollection<Ventum> Venta { get; set; } = new List<Ventum>();
 }

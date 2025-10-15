@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Proyecto.DAL.DataContext;
+namespace Proyecto.MODELS;
 
 public partial class Compra
 {

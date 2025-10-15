@@ -93,3 +93,4 @@ C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.WEB\bin\Debug\net8.0\Proyecto.MODEL
 C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.WEB\bin\Debug\net8.0\Proyecto.DAL.pdb
 C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.WEB\obj\Debug\net8.0\Proyecto.WEB.csproj.AssemblyReference.cache
 C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.WEB\obj\Debug\net8.0\Proyecto.1D0A90FE.Up2Date
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.WEB\obj\Debug\net8.0\Proyecto.WEB.sourcelink.json

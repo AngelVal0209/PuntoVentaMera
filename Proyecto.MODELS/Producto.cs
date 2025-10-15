@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Proyecto.DAL.DataContext;
+namespace Proyecto.MODELS;
 
 public partial class Producto
 {
@@ -20,6 +20,8 @@ public partial class Producto
     public int IdCategoria { get; set; }
 
     public bool? Activo { get; set; }
+
+    public string? CodigoBarras { get; set; }
 
     public virtual ICollection<DetalleCompra> DetalleCompras { get; set; } = new List<DetalleCompra>();
 

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E937DE9-ECC2-43A2-87E3-E86254F2407F}|Proyecto.WEB\\Proyecto.WEB.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E937DE9-ECC2-43A2-87E3-E86254F2407F}|Proyecto.WEB\\Proyecto.WEB.csproj|solutionrelative:proyecto.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E937DE9-ECC2-43A2-87E3-E86254F2407F}|Proyecto.WEB\\Proyecto.WEB.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9E937DE9-ECC2-43A2-87E3-E86254F2407F}|Proyecto.WEB\\Proyecto.WEB.csproj|solutionrelative:proyecto.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -11,12 +15,52 @@
       "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\datacontext\\puntoventacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\datacontext\\movimientostock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\datacontext\\movimientostock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\ventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\ventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\datacontext\\detalleventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|solutionrelative:proyecto.dal\\datacontext\\detalleventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\pagofiado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\pagofiado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\movimientostock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\movimientostock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\detalleventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\detalleventum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.models\\categorium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC812F9E-72E3-4EE1-BECF-FC0E27B09F16}|Proyecto.MODELS\\Proyecto.MODELS.csproj|solutionrelative:proyecto.models\\categorium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21434350-CC80-424F-A9ED-BFC015338A9F}|Proyecto.DAL\\Proyecto.DAL.csproj|c:\\users\\angel\\desktop\\modeloncapas\\proyecto.dal\\comandos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,58 +83,201 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\appsettings.json",
-              "RelativeDocumentMoniker": "Proyecto.WEB\\appsettings.json",
-              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\appsettings.json",
-              "RelativeToolTip": "Proyecto.WEB\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAB+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-15T16:54:48.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MovimientoStock.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\MovimientoStock.cs",
-              "RelativeDocumentMoniker": "Proyecto.DAL\\DataContext\\MovimientoStock.cs",
-              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\MovimientoStock.cs",
-              "RelativeToolTip": "Proyecto.DAL\\DataContext\\MovimientoStock.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto.WEB\\Program.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\Program.cs",
+              "RelativeToolTip": "Proyecto.WEB\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:54:31.487Z",
+              "WhenOpened": "2025-10-15T17:06:58.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DetalleVentum.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\DetalleVentum.cs",
-              "RelativeDocumentMoniker": "Proyecto.DAL\\DataContext\\DetalleVentum.cs",
-              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\DetalleVentum.cs",
-              "RelativeToolTip": "Proyecto.DAL\\DataContext\\DetalleVentum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Ventum.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Ventum.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Ventum.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Ventum.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Ventum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:54:30.527Z",
+              "WhenOpened": "2025-10-15T17:06:13.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Usuario.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Usuario.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:06:11.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Rol.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Rol.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Rol.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:06:08.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Proveedor.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Proveedor.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Proveedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:06:06.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Producto.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Producto.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Producto.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:06:02.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PagoFiado.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\PagoFiado.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\PagoFiado.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\PagoFiado.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\PagoFiado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:06:00.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MovimientoStock.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\MovimientoStock.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\MovimientoStock.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\MovimientoStock.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\MovimientoStock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:05:58.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DetalleVentum.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DetalleVentum.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\DetalleVentum.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DetalleVentum.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\DetalleVentum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:05:55.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DetalleCompra.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DetalleCompra.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\DetalleCompra.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DetalleCompra.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\DetalleCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:05:53.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PuntoVentaContext.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
               "RelativeDocumentMoniker": "Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
               "RelativeToolTip": "Proyecto.DAL\\DataContext\\PuntoVentaContext.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCkAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T16:53:55.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\appsettings.json",
+              "RelativeDocumentMoniker": "Proyecto.WEB\\appsettings.json",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.WEB\\appsettings.json",
+              "RelativeToolTip": "Proyecto.WEB\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-15T16:54:48.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Compra.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Compra.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Compra.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Compra.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:05:51.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Cliente.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Cliente.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:05:49.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Categorium.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Categorium.cs",
+              "RelativeDocumentMoniker": "Proyecto.MODELS\\Categorium.cs",
+              "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\Categorium.cs",
+              "RelativeToolTip": "Proyecto.MODELS\\Categorium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T17:04:42.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "PuntoVentaContext.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
               "RelativeDocumentMoniker": "Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
@@ -98,18 +285,17 @@
               "RelativeToolTip": "Proyecto.MODELS\\DataContext\\PuntoVentaContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:52:56.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T16:52:56.022Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Comandos.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\Comandos.cs",
               "RelativeDocumentMoniker": "Proyecto.DAL\\Comandos.cs",
               "ToolTip": "C:\\Users\\Angel\\Desktop\\ModeloNCapas\\Proyecto.DAL\\Comandos.cs",
               "RelativeToolTip": "Proyecto.DAL\\Comandos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T16:45:44.457Z",
               "EditorCaption": ""

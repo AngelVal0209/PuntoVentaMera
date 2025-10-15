@@ -15,3 +15,4 @@ C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.DAL\bin\Debug\net8.0\Proyecto.MODEL
 C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.DAL\obj\Debug\net8.0\Proyecto.DAL.csproj.AssemblyReference.cache
 C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.DAL\obj\Debug\net8.0\Proyecto.E7F5D5CB.Up2Date
 C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.DAL\obj\Debug\net8.0\Proyecto.DAL.genruntimeconfig.cache
+C:\Users\Angel\Desktop\ModeloNCapas\Proyecto.DAL\obj\Debug\net8.0\Proyecto.DAL.sourcelink.json

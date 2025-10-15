@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Proyecto.MODELS;
 
 namespace Proyecto.DAL.DataContext;
 
@@ -175,6 +176,7 @@ public partial class PuntoVentaContext : DbContext
             entity.ToTable("Producto");
 
             entity.Property(e => e.Activo).HasDefaultValue(true);
+            entity.Property(e => e.CodigoBarras).HasMaxLength(50);
             entity.Property(e => e.Descripcion).HasMaxLength(255);
             entity.Property(e => e.Nombre).HasMaxLength(100);
             entity.Property(e => e.PrecioCompra).HasColumnType("decimal(10, 2)");
