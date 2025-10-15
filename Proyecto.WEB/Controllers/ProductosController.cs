@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Proyecto.BLL.Interfaces;
 using Proyecto.MODELS;
+using Proyecto.WEB.Models.ViewModels;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,7 +20,22 @@ namespace Proyecto.WEB.Controllers
         public async Task<IActionResult> Index()
         {
             var productos = await _productoService.obtenerTodos();
-            return View(productos.ToList());
+
+            var productosVM = productos.Select(p => new ProductoViewModel
+            {
+                IdProducto = p.IdProducto,
+                Nombre = p.Nombre,
+                Descripcion = p.Descripcion,
+                PrecioCompra = p.PrecioCompra,
+                PrecioVenta = p.PrecioVenta,
+                Stock = p.Stock,
+                IdCategoria = p.IdCategoria,
+                NombreCategoria = p.IdCategoriaNavigation.Nombre, // Incluimos ?
+                Activo = p.Activo ?? false,
+                CodigoBarras = p.CodigoBarras
+            }).ToList();
+
+            return View(productosVM);
         }
 
         // GET: Productos/Details/5
@@ -27,7 +43,22 @@ namespace Proyecto.WEB.Controllers
         {
             var producto = await _productoService.obtener(id);
             if (producto == null) return NotFound();
-            return View(producto);
+
+            var productoVM = new ProductoViewModel
+            {
+                IdProducto = producto.IdProducto,
+                Nombre = producto.Nombre,
+                Descripcion = producto.Descripcion,
+                PrecioCompra = producto.PrecioCompra,
+                PrecioVenta = producto.PrecioVenta,
+                Stock = producto.Stock,
+                IdCategoria = producto.IdCategoria,
+                NombreCategoria = producto.IdCategoriaNavigation?.Nombre,
+                Activo = producto.Activo ?? false,
+                CodigoBarras = producto.CodigoBarras
+            };
+
+            return View(productoVM);
         }
 
         // GET: Productos/Create
@@ -39,14 +70,27 @@ namespace Proyecto.WEB.Controllers
         // POST: Productos/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Producto producto)
+        public async Task<IActionResult> Create(ProductoViewModel productoVM)
         {
             if (ModelState.IsValid)
             {
+                var producto = new Producto
+                {
+                    Nombre = productoVM.Nombre,
+                    Descripcion = productoVM.Descripcion,
+                    PrecioCompra = productoVM.PrecioCompra,
+                    PrecioVenta = productoVM.PrecioVenta,
+                    Stock = productoVM.Stock,
+                    IdCategoria = productoVM.IdCategoria,
+                    Activo = productoVM.Activo,
+                    CodigoBarras = productoVM.CodigoBarras
+                };
+
                 await _productoService.Crear(producto);
                 return RedirectToAction(nameof(Index));
             }
-            return View(producto);
+
+            return View(productoVM);
         }
 
         // GET: Productos/Edit/5
@@ -54,22 +98,51 @@ namespace Proyecto.WEB.Controllers
         {
             var producto = await _productoService.obtener(id);
             if (producto == null) return NotFound();
-            return View(producto);
+
+            var productoVM = new ProductoViewModel
+            {
+                IdProducto = producto.IdProducto,
+                Nombre = producto.Nombre,
+                Descripcion = producto.Descripcion,
+                PrecioCompra = producto.PrecioCompra,
+                PrecioVenta = producto.PrecioVenta,
+                Stock = producto.Stock,
+                IdCategoria = producto.IdCategoria,
+                NombreCategoria = producto.IdCategoriaNavigation?.Nombre,
+                Activo = producto.Activo ?? false,
+                CodigoBarras = producto.CodigoBarras
+            };
+
+            return View(productoVM);
         }
 
         // POST: Productos/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Producto producto)
+        public async Task<IActionResult> Edit(int id, ProductoViewModel productoVM)
         {
-            if (id != producto.IdProducto) return BadRequest();
+            if (id != productoVM.IdProducto) return BadRequest();
 
             if (ModelState.IsValid)
             {
+                var producto = new Producto
+                {
+                    IdProducto = productoVM.IdProducto,
+                    Nombre = productoVM.Nombre,
+                    Descripcion = productoVM.Descripcion,
+                    PrecioCompra = productoVM.PrecioCompra,
+                    PrecioVenta = productoVM.PrecioVenta,
+                    Stock = productoVM.Stock,
+                    IdCategoria = productoVM.IdCategoria,
+                    Activo = productoVM.Activo,
+                    CodigoBarras = productoVM.CodigoBarras
+                };
+
                 await _productoService.Actualizar(producto);
                 return RedirectToAction(nameof(Index));
             }
-            return View(producto);
+
+            return View(productoVM);
         }
 
         // GET: Productos/Delete/5
@@ -77,7 +150,22 @@ namespace Proyecto.WEB.Controllers
         {
             var producto = await _productoService.obtener(id);
             if (producto == null) return NotFound();
-            return View(producto);
+
+            var productoVM = new ProductoViewModel
+            {
+                IdProducto = producto.IdProducto,
+                Nombre = producto.Nombre,
+                Descripcion = producto.Descripcion,
+                PrecioCompra = producto.PrecioCompra,
+                PrecioVenta = producto.PrecioVenta,
+                Stock = producto.Stock,
+                IdCategoria = producto.IdCategoria,
+                NombreCategoria = producto.IdCategoriaNavigation?.Nombre,
+                Activo = producto.Activo ?? false,
+                CodigoBarras = producto.CodigoBarras
+            };
+
+            return View(productoVM);
         }
 
         // POST: Productos/Delete/5

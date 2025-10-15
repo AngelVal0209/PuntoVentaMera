@@ -11,15 +11,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DbContext>(options => {
+builder.Services.AddDbContext<PuntoVentaContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlString"));
 });
+
 
 builder.Services.AddScoped<IGenericRepository<Producto>, ProductoRepository>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
 
-builder.Services.AddScoped<IGenericRepository<Usuario>,UsuarioRepository>();
-builder.Services.AddScoped<IUsuarioService,IUsuarioService>();
+builder.Services.AddScoped<IGenericRepository<Usuario>, UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+
 
 
 

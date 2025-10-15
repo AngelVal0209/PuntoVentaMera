@@ -31,7 +31,9 @@ namespace Proyecto.WEB.Models.ViewModels
 
         public string? NombreCategoria { get; set; }
 
-        public bool? Activo { get; set; }
+        [Display(Name = "Activo")]
+        public bool Activo { get; set; } = true; 
+
 
         [StringLength(50, ErrorMessage = "El código de barras no puede exceder los 50 caracteres")]
         public string? CodigoBarras { get; set; }

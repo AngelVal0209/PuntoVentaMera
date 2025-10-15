@@ -1,0 +1,31 @@
+﻿@model Proyecto.WEB.Models.ViewModels.ProductoViewModel
+
+@{
+    ViewData["Title"] = "Detalles del Producto";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Nombre</dt>
+        <dd class="col-sm-9">@Model.Nombre</dd>
+
+        <dt class="col-sm-3">Descripción</dt>
+        <dd class="col-sm-9">@Model.Descripcion</dd>
+
+        <dt class="col-sm-3">Precio Compra</dt>
+        <dd class="col-sm-9">@Model.PrecioCompra.ToString("C")</dd>
+
+        <dt class="col-sm-3">Precio Venta</dt>
+        <dd class="col-sm-9">@Model.PrecioVenta.ToString("C")</dd>
+
+        <dt class="col-sm-3">Stock</dt>
+        <dd class="col-sm-9">@Model.Stock</dd>
+
+        <dt class="col-sm-3">Categoría</dt>
+        <dd class="col-sm-9">@Model.NombreCategoria</dd>
+    </dl>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Volver</a>
