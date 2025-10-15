@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using Proyecto.BLL.Interfaces;
+using Proyecto.BLL.Servicios;
 using Proyecto.DAL.DataContext;
+using Proyecto.DAL.ModelosRepositorios;
+using Proyecto.DAL.Repositorio;
 using Proyecto.MODELS;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +14,14 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<DbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlString"));
 });
+
+builder.Services.AddScoped<IGenericRepository<Producto>, ProductoRepository>();
+builder.Services.AddScoped<IProductoService, ProductoService>();
+
+builder.Services.AddScoped<IGenericRepository<Usuario>,UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioService,IUsuarioService>();
+
+
 
 var app = builder.Build();
 

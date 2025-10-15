@@ -1,0 +1,132 @@
+CREATE DATABASE PuntoVenta;
+GO
+USE PuntoVenta;
+GO
+
+-- 1. ROLES Y USUARIOS
+CREATE TABLE Rol (
+    IdRol INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Usuario (
+    IdUsuario INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Usuario NVARCHAR(50) NOT NULL UNIQUE,
+    Clave NVARCHAR(255) NOT NULL,
+    IdRol INT NOT NULL,
+    FechaCreacion DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (IdRol) REFERENCES Rol(IdRol)
+);
+
+-- 2. CATEGORÍAS Y PRODUCTOS
+CREATE TABLE Categoria (
+    IdCategoria INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Descripcion NVARCHAR(255)
+);
+
+CREATE TABLE Producto (
+    IdProducto INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Descripcion NVARCHAR(255),
+    PrecioCompra DECIMAL(10,2) NOT NULL,
+    PrecioVenta DECIMAL(10,2) NOT NULL,
+    Stock INT DEFAULT 0,
+    IdCategoria INT NOT NULL,
+    Activo BIT DEFAULT 1,
+    FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria)
+);
+CREATE INDEX IX_Producto_Nombre ON Producto(Nombre);
+
+-- 3. CLIENTES Y PROVEEDORES
+CREATE TABLE Cliente (
+    IdCliente INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Telefono NVARCHAR(20),
+    Email NVARCHAR(100),
+    Direccion NVARCHAR(255),
+    Activo BIT DEFAULT 1
+);
+
+CREATE TABLE Proveedor (
+    IdProveedor INT IDENTITY(1,1) PRIMARY KEY,
+    Nombre NVARCHAR(100) NOT NULL,
+    Telefono NVARCHAR(20),
+    Email NVARCHAR(100),
+    Direccion NVARCHAR(255),
+    Activo BIT DEFAULT 1
+);
+
+-- 4. MOVIMIENTOS DE INVENTARIO
+CREATE TABLE MovimientoStock (
+    IdMovimiento INT IDENTITY(1,1) PRIMARY KEY,
+    IdProducto INT NOT NULL,
+    Tipo NVARCHAR(10) CHECK (Tipo IN ('ENTRADA','SALIDA')),
+    Cantidad INT NOT NULL,
+    Fecha DATETIME DEFAULT GETDATE(),
+    IdUsuario INT NULL,
+    Referencia NVARCHAR(50),
+    Motivo NVARCHAR(255),
+    FOREIGN KEY (IdProducto) REFERENCES Producto(IdProducto),
+    FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
+);
+
+-- 5. COMPRAS
+CREATE TABLE Compra (
+    IdCompra INT IDENTITY(1,1) PRIMARY KEY,
+    IdProveedor INT NOT NULL,
+    IdUsuario INT NOT NULL,
+    Fecha DATETIME DEFAULT GETDATE(),
+    Total DECIMAL(10,2),
+    FOREIGN KEY (IdProveedor) REFERENCES Proveedor(IdProveedor),
+    FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
+);
+
+CREATE TABLE DetalleCompra (
+    IdDetalle INT IDENTITY(1,1) PRIMARY KEY,
+    IdCompra INT NOT NULL,
+    IdProducto INT NOT NULL,
+    Cantidad INT NOT NULL,
+    PrecioCompra DECIMAL(10,2) NOT NULL,
+    Subtotal AS (Cantidad * PrecioCompra) PERSISTED,
+    FOREIGN KEY (IdCompra) REFERENCES Compra(IdCompra),
+    FOREIGN KEY (IdProducto) REFERENCES Producto(IdProducto)
+);
+
+-- 6. VENTAS
+CREATE TABLE Venta (
+    IdVenta INT IDENTITY(1,1) PRIMARY KEY,
+    IdCliente INT NULL,
+    IdUsuario INT NOT NULL,
+    Fecha DATETIME DEFAULT GETDATE(),
+    Total DECIMAL(10,2) NOT NULL,
+    EsFiado BIT DEFAULT 0,                 -- 1 = venta fiada
+    SaldoPendiente DECIMAL(10,2) DEFAULT 0,
+    Pagado BIT DEFAULT 0,
+    FechaPagoEstimada DATE NULL,
+    FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente),
+    FOREIGN KEY (IdUsuario) REFERENCES Usuario(IdUsuario)
+);
+
+CREATE TABLE DetalleVenta (
+    IdDetalle INT IDENTITY(1,1) PRIMARY KEY,
+    IdVenta INT NOT NULL,
+    IdProducto INT NOT NULL,
+    Cantidad INT NOT NULL,
+    PrecioUnitario DECIMAL(10,2) NOT NULL,
+    Subtotal AS (Cantidad * PrecioUnitario) PERSISTED,
+    FOREIGN KEY (IdVenta) REFERENCES Venta(IdVenta),
+    FOREIGN KEY (IdProducto) REFERENCES Producto(IdProducto)
+);
+
+-- 7. PAGOS DE FIADOS
+CREATE TABLE PagoFiado (
+    IdPago INT IDENTITY(1,1) PRIMARY KEY,
+    IdVenta INT NOT NULL,
+    FechaPago DATETIME DEFAULT GETDATE(),
+    MontoPagado DECIMAL(10,2) NOT NULL,
+    Observacion NVARCHAR(255),
+    FOREIGN KEY (IdVenta) REFERENCES Venta(IdVenta)
+);
+GO

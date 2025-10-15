@@ -11,8 +11,4 @@
     <ProjectReference Include="..\Proyecto.MODELS\Proyecto.MODELS.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Servicios\" />
-  </ItemGroup>
-
 </Project>
