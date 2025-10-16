@@ -174,7 +174,8 @@ namespace Proyecto.WEB.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _productoService.Eliminar(id);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Productos");
+
         }
     }
 }

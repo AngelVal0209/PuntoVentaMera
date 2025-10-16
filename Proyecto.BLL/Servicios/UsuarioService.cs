@@ -11,34 +11,35 @@ namespace Proyecto.BLL.Servicios
 {
     public class UsuarioService : IUsuarioService
     {
-        private readonly IGenericRepository<Usuario> _repository;
-        public UsuarioService(IGenericRepository<Usuario> _usuarioRepo)
+        private readonly IGenericRepository<Usuario> _usuarioRepositorio;
+        public UsuarioService(IGenericRepository<Usuario> usuarioRepositorio)
         {
-            _repository = _usuarioRepo;
-        }
-        public async Task<bool> Actualizar(Usuario modelo)
-        {
-            throw new NotImplementedException();
+            _usuarioRepositorio = usuarioRepositorio;
         }
 
         public async Task<bool> Crear(Usuario modelo)
         {
-            throw new NotImplementedException();
+            return await _usuarioRepositorio.Crear(modelo);
+        }
+
+        public async Task<bool> Actualizar(Usuario modelo)
+        {
+            return await _usuarioRepositorio.Actualizar(modelo);
         }
 
         public async Task<bool> Eliminar(int id)
         {
-            throw new NotImplementedException();
+            return await _usuarioRepositorio.Eliminar(id);
         }
 
         public async Task<Usuario> obtener(int id)
         {
-            throw new NotImplementedException();
+            return await _usuarioRepositorio.obtener(id);
         }
 
         public async Task<IQueryable<Usuario>> obtenerTodos()
         {
-            throw new NotImplementedException();
+            return await _usuarioRepositorio.obtenerTodos();
         }
     }
 }

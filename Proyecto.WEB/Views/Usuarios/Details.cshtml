@@ -1,0 +1,31 @@
+﻿@model Proyecto.WEB.Models.ViewModels.UsuarioViewModel
+
+@{
+    ViewData["Title"] = "Detalles del Usuario";
+}
+
+<h2>Detalles del Usuario</h2>
+
+<div class="card p-3">
+    <dl class="row">
+        <dt class="col-sm-3">Nombre</dt>
+        <dd class="col-sm-9">@Model.Nombre</dd>
+
+        <dt class="col-sm-3">Usuario</dt>
+        <dd class="col-sm-9">@Model.Usuario1</dd>
+
+        <dt class="col-sm-3">Rol</dt>
+        <dd class="col-sm-9">@Model.NombreRol</dd>
+
+        <dt class="col-sm-3">Fecha de creación</dt>
+        <dd class="col-sm-9">@Model.FechaCreacion?.ToString("yyyy-MM-dd")</dd>
+
+        <dt class="col-sm-3">Activo</dt>
+        <dd class="col-sm-9">@((Model.Activo) ? "Sí" : "No")</dd>
+    </dl>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.IdUsuario" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</p>
