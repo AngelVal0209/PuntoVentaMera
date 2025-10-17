@@ -22,6 +22,14 @@ builder.Services.AddScoped<IProductoService, ProductoService>();
 builder.Services.AddScoped<IGenericRepository<Usuario>, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
+builder.Services.AddScoped<IGenericRepository<Categorium>, CategoriaRepository>();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+
+builder.Services.AddScoped<IGenericRepository<Proveedor>, ProveedorRepository>();
+builder.Services.AddScoped<IProveedorService, ProveedorService>();
+
+builder.Services.AddScoped<IGenericRepository<Cliente>, ClienteRepository>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
 
 
 
