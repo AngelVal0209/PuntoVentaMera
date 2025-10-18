@@ -19,17 +19,38 @@ namespace Proyecto.BLL.Servicios
         }
         public async Task<bool> Actualizar(Proveedor modelo)
         {
-            return await _proveedorRepositorio.Actualizar(modelo);
+            try
+            {
+                return await _proveedorRepositorio.Actualizar(modelo);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<bool> Crear(Proveedor modelo)
         {
-            return await _proveedorRepositorio.Crear(modelo);
+            try
+            {
+                return await _proveedorRepositorio.Crear(modelo);
+            }
+            catch
+            {
+                return false; 
+            }
         }
 
         public async Task<bool> Eliminar(int id)
         {
-            return await _proveedorRepositorio.Eliminar(id);
+            try
+            {
+                return await _proveedorRepositorio.Eliminar(id);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<Proveedor> obtener(int id)

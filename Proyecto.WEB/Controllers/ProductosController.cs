@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Proyecto.BLL.Interfaces;
 using Proyecto.MODELS;
+using Proyecto.WEB.Models;
 using Proyecto.WEB.Models.ViewModels;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Proyecto.WEB.Controllers
             _productoService = productoService;
         }
 
-        // GET: Productos
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var productos = await _productoService.obtenerTodos();
@@ -30,7 +31,7 @@ namespace Proyecto.WEB.Controllers
                 PrecioVenta = p.PrecioVenta,
                 Stock = p.Stock,
                 IdCategoria = p.IdCategoria,
-                NombreCategoria = p.IdCategoriaNavigation.Nombre, // Incluimos ?
+                NombreCategoria = p.IdCategoriaNavigation.Nombre,
                 Activo = p.Activo ?? false,
                 CodigoBarras = p.CodigoBarras
             }).ToList();
@@ -38,11 +39,15 @@ namespace Proyecto.WEB.Controllers
             return View(productosVM);
         }
 
-        // GET: Productos/Details/5
+        [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
             var producto = await _productoService.obtener(id);
-            if (producto == null) return NotFound();
+            if (producto == null)
+            {
+                TempData["Error"] = "El producto solicitado no existe.";
+                return RedirectToAction(nameof(Index));
+            }
 
             var productoVM = new ProductoViewModel
             {
@@ -61,43 +66,51 @@ namespace Proyecto.WEB.Controllers
             return View(productoVM);
         }
 
-        // GET: Productos/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Productos/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProductoViewModel productoVM)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var producto = new Producto
-                {
-                    Nombre = productoVM.Nombre,
-                    Descripcion = productoVM.Descripcion,
-                    PrecioCompra = productoVM.PrecioCompra,
-                    PrecioVenta = productoVM.PrecioVenta,
-                    Stock = productoVM.Stock,
-                    IdCategoria = productoVM.IdCategoria,
-                    Activo = productoVM.Activo,
-                    CodigoBarras = productoVM.CodigoBarras
-                };
-
-                await _productoService.Crear(producto);
-                return RedirectToAction(nameof(Index));
+                TempData["Error"] = "Datos inválidos. Revisa la información del producto.";
+                return View(productoVM);
             }
 
-            return View(productoVM);
+            var producto = new Producto
+            {
+                Nombre = productoVM.Nombre,
+                Descripcion = productoVM.Descripcion,
+                PrecioCompra = productoVM.PrecioCompra,
+                PrecioVenta = productoVM.PrecioVenta,
+                Stock = productoVM.Stock,
+                IdCategoria = productoVM.IdCategoria,
+                Activo = productoVM.Activo,
+                CodigoBarras = productoVM.CodigoBarras
+            };
+
+            var resultado = await _productoService.Crear(producto);
+            TempData[resultado ? "Exito" : "Error"] = resultado
+                ? "Producto creado exitosamente."
+                : "Error al crear el producto.";
+
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Productos/Edit/5
+        [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
             var producto = await _productoService.obtener(id);
-            if (producto == null) return NotFound();
+            if (producto == null)
+            {
+                TempData["Error"] = "No se encontró el producto que intentas editar.";
+                return RedirectToAction(nameof(Index));
+            }
 
             var productoVM = new ProductoViewModel
             {
@@ -116,40 +129,52 @@ namespace Proyecto.WEB.Controllers
             return View(productoVM);
         }
 
-        // POST: Productos/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, ProductoViewModel productoVM)
         {
-            if (id != productoVM.IdProducto) return BadRequest();
-
-            if (ModelState.IsValid)
+            if (id != productoVM.IdProducto)
             {
-                var producto = new Producto
-                {
-                    IdProducto = productoVM.IdProducto,
-                    Nombre = productoVM.Nombre,
-                    Descripcion = productoVM.Descripcion,
-                    PrecioCompra = productoVM.PrecioCompra,
-                    PrecioVenta = productoVM.PrecioVenta,
-                    Stock = productoVM.Stock,
-                    IdCategoria = productoVM.IdCategoria,
-                    Activo = productoVM.Activo,
-                    CodigoBarras = productoVM.CodigoBarras
-                };
-
-                await _productoService.Actualizar(producto);
+                TempData["Error"] = "El identificador del producto no coincide.";
                 return RedirectToAction(nameof(Index));
             }
 
-            return View(productoVM);
+            if (!ModelState.IsValid)
+            {
+                TempData["Error"] = "Datos inválidos. Revisa la información del producto.";
+                return View(productoVM);
+            }
+
+            var producto = new Producto
+            {
+                IdProducto = productoVM.IdProducto,
+                Nombre = productoVM.Nombre,
+                Descripcion = productoVM.Descripcion,
+                PrecioCompra = productoVM.PrecioCompra,
+                PrecioVenta = productoVM.PrecioVenta,
+                Stock = productoVM.Stock,
+                IdCategoria = productoVM.IdCategoria,
+                Activo = productoVM.Activo,
+                CodigoBarras = productoVM.CodigoBarras
+            };
+
+            var resultado = await _productoService.Actualizar(producto);
+            TempData[resultado ? "Exito" : "Error"] = resultado
+                ? "Producto actualizado correctamente."
+                : "Error al actualizar el producto.";
+
+            return RedirectToAction(nameof(Index));
         }
 
-        // GET: Productos/Delete/5
+        [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
             var producto = await _productoService.obtener(id);
-            if (producto == null) return NotFound();
+            if (producto == null)
+            {
+                TempData["Error"] = "No se encontró el producto que intentas eliminar.";
+                return RedirectToAction(nameof(Index));
+            }
 
             var productoVM = new ProductoViewModel
             {
@@ -168,14 +193,16 @@ namespace Proyecto.WEB.Controllers
             return View(productoVM);
         }
 
-        // POST: Productos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _productoService.Eliminar(id);
-            return RedirectToAction("Index", "Productos");
+            var resultado = await _productoService.Eliminar(id);
+            TempData[resultado ? "Exito" : "Error"] = resultado
+                ? "Producto eliminado correctamente."
+                : "Error al eliminar el producto.";
 
+            return RedirectToAction(nameof(Index));
         }
     }
 }

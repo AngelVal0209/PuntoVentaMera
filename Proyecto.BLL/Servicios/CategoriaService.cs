@@ -17,17 +17,38 @@ namespace Proyecto.BLL.Servicios
 
         public async Task<bool> Crear(Categorium modelo)
         {
-            return await _categoriaRepositorio.Crear(modelo);
+            try 
+            { 
+                return await _categoriaRepositorio.Crear(modelo);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<bool> Actualizar(Categorium modelo)
         {
-            return await _categoriaRepositorio.Actualizar(modelo);
+            try
+            {
+                return await _categoriaRepositorio.Actualizar(modelo);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<bool> Eliminar(int id)
         {
-            return await _categoriaRepositorio.Eliminar(id);
+            try 
+            {
+                return await _categoriaRepositorio.Eliminar(id);
+            } 
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<Categorium> obtener(int id)

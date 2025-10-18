@@ -17,17 +17,38 @@ namespace Proyecto.BLL.Servicios
 
         public async Task<bool> Crear(Producto modelo)
         {
-            return await _productoRepositorio.Crear(modelo);
+            try
+            {
+                return await _productoRepositorio.Crear(modelo);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<bool> Actualizar(Producto modelo)
         {
-            return await _productoRepositorio.Actualizar(modelo);
+            try
+            {
+                return await _productoRepositorio.Actualizar(modelo);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<bool> Eliminar(int id)
         {
-            return await _productoRepositorio.Eliminar(id);
+            try
+            {
+                return await _productoRepositorio.Eliminar(id);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public async Task<Producto> obtener(int id)

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Proyecto.BLL.Interfaces;
 using Proyecto.MODELS;
 using Proyecto.WEB.Models.ViewModels;
@@ -21,26 +22,33 @@ namespace Proyecto.WEB.Controllers
         {
             var usuarios = await _usuarioService.obtenerTodos();
 
-            var usuariosVM = usuarios.Select(u => new UsuarioViewModel
+            var lista = usuarios.ToList(); 
+
+            var usuariosVM = lista.Select(u => new UsuarioViewModel
             {
                 IdUsuario = u.IdUsuario,
                 Nombre = u.Nombre,
                 Usuario1 = u.Usuario1,
                 Clave = u.Clave,
                 IdRol = u.IdRol,
-                NombreRol = u.IdRolNavigation.Nombre,
+                NombreRol = ObtenerNombreRol(u.IdRol),
                 FechaCreacion = u.FechaCreacion,
-                Activo = true 
+                Activo = true
             }).ToList();
 
             return View(usuariosVM);
         }
 
+
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int id)
         {
             var usuario = await _usuarioService.obtener(id);
-            if (usuario == null) return NotFound();
+            if (usuario == null)
+            {
+                TempData["Error"] = "El usuario no fue encontrado.";
+                return RedirectToAction(nameof(Index));
+            }
 
             var usuarioVM = new UsuarioViewModel
             {
@@ -49,7 +57,7 @@ namespace Proyecto.WEB.Controllers
                 Usuario1 = usuario.Usuario1,
                 Clave = usuario.Clave,
                 IdRol = usuario.IdRol,
-                NombreRol = usuario.IdRolNavigation?.Nombre,
+                NombreRol = ObtenerNombreRol(usuario.IdRol),
                 FechaCreacion = usuario.FechaCreacion,
                 Activo = true
             };
@@ -57,40 +65,58 @@ namespace Proyecto.WEB.Controllers
             return View(usuarioVM);
         }
 
-        // GET: Usuarios/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Usuarios/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(UsuarioViewModel usuarioVM)
-        {
-            if (ModelState.IsValid)
+            // GET: Usuarios/Create
+            public IActionResult Create()
             {
-                var usuario = new Usuario
-                {
-                    Nombre = usuarioVM.Nombre,
-                    Usuario1 = usuarioVM.Usuario1,
-                    Clave = usuarioVM.Clave,
-                    IdRol = usuarioVM.IdRol,
-                    FechaCreacion = DateTime.Now
-                };
-
-                await _usuarioService.Crear(usuario);
-                return RedirectToAction(nameof(Index));
+                ViewBag.Roles = ObtenerListaRoles();
+                return View();
             }
 
-            return View(usuarioVM);
-        }
+            // POST: Usuarios/Create
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Create(UsuarioViewModel usuarioVM)
+            {
+                if (ModelState.IsValid)
+                {
+                    try
+                    {
+                        var usuario = new Usuario
+                        {
+                            Nombre = usuarioVM.Nombre,
+                            Usuario1 = usuarioVM.Usuario1,
+                            Clave = usuarioVM.Clave,
+                            IdRol = usuarioVM.IdRol,
+                            FechaCreacion = DateTime.Now
+                        };
+
+                        await _usuarioService.Crear(usuario);
+                        TempData["Exito"] = "Usuario creado correctamente.";
+                        return RedirectToAction(nameof(Index));
+                    }
+                    catch (Exception ex)
+                    {
+                        TempData["Error"] = $"Error al crear usuario: {ex.Message}";
+                    }
+                }
+                else
+                {
+                    TempData["Error"] = "Datos inválidos. Verifica los campos.";
+                }
+
+                ViewBag.Roles = ObtenerListaRoles();
+                return View(usuarioVM);
+            }
 
         // GET: Usuarios/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
             var usuario = await _usuarioService.obtener(id);
-            if (usuario == null) return NotFound();
+            if (usuario == null)
+            {
+                TempData["Error"] = "El usuario no fue encontrado.";
+                return RedirectToAction(nameof(Index));
+            }
 
             var usuarioVM = new UsuarioViewModel
             {
@@ -99,11 +125,12 @@ namespace Proyecto.WEB.Controllers
                 Usuario1 = usuario.Usuario1,
                 Clave = usuario.Clave,
                 IdRol = usuario.IdRol,
-                NombreRol = usuario.IdRolNavigation?.Nombre,
+                NombreRol = ObtenerNombreRol(usuario.IdRol),
                 FechaCreacion = usuario.FechaCreacion,
                 Activo = true
             };
 
+            ViewBag.Roles = ObtenerListaRoles();
             return View(usuarioVM);
         }
 
@@ -112,24 +139,41 @@ namespace Proyecto.WEB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, UsuarioViewModel usuarioVM)
         {
-            if (id != usuarioVM.IdUsuario) return BadRequest();
-
-            if (ModelState.IsValid)
+            if (id != usuarioVM.IdUsuario)
             {
-                var usuario = new Usuario
-                {
-                    IdUsuario = usuarioVM.IdUsuario,
-                    Nombre = usuarioVM.Nombre,
-                    Usuario1 = usuarioVM.Usuario1,
-                    Clave = usuarioVM.Clave,
-                    IdRol = usuarioVM.IdRol,
-                    FechaCreacion = usuarioVM.FechaCreacion
-                };
-
-                await _usuarioService.Actualizar(usuario);
+                TempData["Error"] = "El ID del usuario no coincide.";
                 return RedirectToAction(nameof(Index));
             }
 
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var usuario = new Usuario
+                    {
+                        IdUsuario = usuarioVM.IdUsuario,
+                        Nombre = usuarioVM.Nombre,
+                        Usuario1 = usuarioVM.Usuario1,
+                        Clave = usuarioVM.Clave,
+                        IdRol = usuarioVM.IdRol,
+                        FechaCreacion = usuarioVM.FechaCreacion // No se modifica
+                    };
+
+                    await _usuarioService.Actualizar(usuario);
+                    TempData["Exito"] = "Usuario actualizado correctamente.";
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    TempData["Error"] = $"Error al actualizar usuario: {ex.Message}";
+                }
+            }
+            else
+            {
+                TempData["Error"] = "Datos inválidos. Verifica los campos.";
+            }
+
+            ViewBag.Roles = ObtenerListaRoles();
             return View(usuarioVM);
         }
 
@@ -137,7 +181,11 @@ namespace Proyecto.WEB.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var usuario = await _usuarioService.obtener(id);
-            if (usuario == null) return NotFound();
+            if (usuario == null)
+            {
+                TempData["Error"] = "El usuario no fue encontrado.";
+                return RedirectToAction(nameof(Index));
+            }
 
             var usuarioVM = new UsuarioViewModel
             {
@@ -145,7 +193,7 @@ namespace Proyecto.WEB.Controllers
                 Nombre = usuario.Nombre,
                 Usuario1 = usuario.Usuario1,
                 IdRol = usuario.IdRol,
-                NombreRol = usuario.IdRolNavigation?.Nombre,
+                NombreRol = ObtenerNombreRol(usuario.IdRol),
                 FechaCreacion = usuario.FechaCreacion,
                 Activo = true
             };
@@ -158,8 +206,38 @@ namespace Proyecto.WEB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _usuarioService.Eliminar(id);
-            return RedirectToAction("Index", "Productos");
+            try
+            {
+                await _usuarioService.Eliminar(id);
+                TempData["Exito"] = "Usuario eliminado correctamente.";
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = $"Error al eliminar usuario: {ex.Message}";
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        private List<SelectListItem> ObtenerListaRoles()
+        {
+            return new List<SelectListItem>
+            {
+                new SelectListItem { Value = "1", Text = "Administrador" },
+                new SelectListItem { Value = "2", Text = "Vendedor" },
+                new SelectListItem { Value = "3", Text = "Cajero" }
+            };
+        }
+
+        private static string ObtenerNombreRol(int idRol)
+        {
+            return idRol switch
+            {
+                1 => "Administrador",
+                2 => "Vendedor",
+                3 => "Cajero",
+                _ => "Desconocido"
+            };
         }
     }
 }

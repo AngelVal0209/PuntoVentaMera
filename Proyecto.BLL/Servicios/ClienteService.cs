@@ -20,17 +20,40 @@ namespace Proyecto.BLL.Servicios
         }
         public async Task<bool> Actualizar(Cliente modelo)
         {
-            return await _clienteRepositorio.Actualizar(modelo);
+            try 
+            {
+                return await _clienteRepositorio.Actualizar(modelo);
+            }
+            catch
+            {
+                return false;
+            }
+           
         }
 
         public async Task<bool> Crear(Cliente modelo)
         {
-            return await _clienteRepositorio.Crear(modelo);
+            try 
+            {
+                return await _clienteRepositorio.Crear(modelo);
+            } 
+            catch 
+            {
+                return false;
+            }
         }
 
         public async Task<bool> Eliminar(int id)
         {
-            return await _clienteRepositorio.Eliminar(id);
+            try
+            {
+                return await _clienteRepositorio.Eliminar(id);
+            }
+            catch 
+            { 
+                return false; 
+            }
+            
         }
 
         public async Task<Cliente> obtener(int id)
